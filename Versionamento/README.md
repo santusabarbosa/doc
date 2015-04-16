@@ -58,7 +58,7 @@ Não precisa marcar a versão em todos assemblies da solução, apenas no projet
 Se o projeto for web, coloque também no footer do site.
 Para não fazer isso manualmente, você pode utilizar o seguinte snippet: 
 
-```
+```csharp
 HttpContext.Current.ApplicationInstance.GetType().BaseType.Assembly.GetName().Version
 ```
 
