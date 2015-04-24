@@ -22,4 +22,4 @@ Algumas recomendações ao escrever seu arquivo changelog:
 
 ### Referência e exemplo
 
-O site [keepachangelog.com](http://keepachangelog.com) é um esforço da comunidade open source em manter um formato padrão para changelogs (inclui exemplo).
+O site [keepachangelog.com](http://keepachangelog.com) ([tradução em português](http://tallesl.github.io/keep-a-changelog/)) é um esforço da comunidade open source em manter um formato padrão para changelogs (inclui exemplo).
