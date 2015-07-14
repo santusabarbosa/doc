@@ -59,11 +59,9 @@ Markdown:
 Like a *boss*
 ```
 
-HTML:
+Resultado:
 
-```
-Like a <em>boss</em>
-```
+Like a *boss*
 
 ### Negrito
 
@@ -73,11 +71,9 @@ Markdown:
 Works on **my machine**
 ```
 
-HTML:
+Resultado:
 
-```
-Works on <strong>my machine</strong>
-```
+Works on **my machine**
 
 ### Cabeçalho
 
@@ -89,13 +85,11 @@ Markdown:
 ### Título 3
 ```
 
-HTML:
+Resultado:
 
-```
-<h1>Título 1</h1>
-<h2>Título 2</h2>
-<h3>Título 3</h3>
-```
+# Título 1
+## Título 2
+### Título 3
 
 ### Listas não ordenadas
 
@@ -109,21 +103,13 @@ Markdown:
 * Item 3
 ```
 
-HTML:
+Resultado:
 
-```
-<ul>
-  <li>Item 1</li>
-  <li>
-    Item 2
-    <ul>
-      <li>Item 2.1</li>
-      <li>Item 2.2</li>
-    </ul>
-  </li>
-  <li>Item 3</li>
-</ul>
-```
+* Item 1
+* Item 2
+  * Item 2.1
+  * Item 2.2
+* Item 3
 
 ### Listas ordenadas
 
@@ -135,15 +121,11 @@ Markdown:
 * Item Z
 ```
 
-HTML:
+Resultado:
 
-```
-<ol>
-  <li>Item X</li>
-  <li>Item Y</li>
-  <li>Item Z</li>
-</ol>
-```
+1. Item X
+* Item Y
+* Item Z
 
 ### Citação
 
@@ -153,11 +135,9 @@ Markdown:
 > "Tinha uma pedra no meio do caminho"
 ```
 
-HTML:
+Resultado:
 
-```
-<blockquote>"Tinha uma pedra no meio do caminho"</blockquote>
-```
+> "Tinha uma pedra no meio do caminho"
 
 ### Links
 
@@ -167,11 +147,9 @@ Markdown:
 [Google](http://www.google.com)
 ```
 
-HTML:
+Resultado:
 
-```
-<a href="http://www.google.com">Google</a>
-```
+[Google](http://www.google.com)
 
 ### Imagens
 
@@ -181,11 +159,9 @@ Markdown:
 ![CC](http://i.creativecommons.org/l/by/3.0/88x31.png)
 ```
 
-HTML:
+Resultado:
 
-```
-<img alt="CC" src="http://i.creativecommons.org/l/by/3.0/88x31.png">
-```
+![CC](http://i.creativecommons.org/l/by/3.0/88x31.png)
 
 ### Linha horizontal
 
@@ -195,11 +171,9 @@ Markdown:
 ***
 ```
 
-HTML:
+Resultado:
 
-```
-<hr>
-```
+***
 
 ### Código inline
 
@@ -209,11 +183,9 @@ Markdown:
 Para isso utilize o método `HelloWorld`
 ```
 
-HTML:
+Resultado:
 
-```
-Para isso utilize o método <code>HelloWorld</code>
-```
+Para isso utilize o método `HelloWorld`
 
 ### Bloco de código
 
@@ -228,15 +200,9 @@ Markdown:
     }
 ```
 
-HTML:
+Resultado:
 
-```
-<pre>
-  <code>
     public void HelloWorld()
     {
         Console.WriteLine("Hello World!");
     }
-  </code>
-</pre>
-```
