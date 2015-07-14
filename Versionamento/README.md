@@ -15,6 +15,9 @@ v[major].[minor].[patch].[ano e mês]
 * **Patch**: Mudanças pequenas (exemplos: correções de bug, alterações de texto).
 * **Ano e mês**: Apenas uma referência da época em que a versão foi fechada. Utilizar dois dígitos para o ano seguido de dois dígitos para o mês.
 
+Em casos de web service ou bibliotecas, um incremento do *major* significa que a nova versão quebra a compatibilidade com a versão anterior.
+**Ou seja: uma versão que incremente apenas um *minor* ou *patch* deve continuar compatível com as versões de mesmo *major***.
+
 ## Incrementando o número de versão
 
 * Para softwares maiores (sistemas que passam por etapa de teste e homologação antes de produção) a primeira versão é **v0.1.0**;
