@@ -51,11 +51,13 @@ Para controle do fluxo de nossos dados, nós utilizamos um sistema de *Autoriza�
 
 Qualquer dúvida sobre o serviço ou como utilizá-lo procure a [Equipe de Arquitetura][arquitetura].
 
+[arquitetura]: mailto:AeC-SistemasArquitetura@aec.com.br
+
 ## Versione corretamente
 
-Versione o web service conforme nossas recomendações e não se esqueça de analisar o impacto dos clientes do web service ao realizar alguma alteração.
+[Versione o web service conforme nossas recomendações][versionamento] e não se esqueça de analisar o impacto dos clientes do web service ao realizar alguma alteração.
 
-[arquitetura]: mailto:AeC-SistemasArquitetura@aec.com.br
+[versionamento]: https://github.com/aec-desenvolvimento/doc/tree/master/Versionamento
 
 ## Seja claro na documentação
 
