@@ -13,18 +13,25 @@ v[major].[minor].[patch].[ano e mês]
 * **Major**: Mudanças significativas (exemplos: alteração brusca de layout em todo sistema, mudanças significativas de funcionalidade).
 * **Minor**: Mudanças médias (exemplos: adição de pequenas funcionalidades, mudança de layout em alguma tela).
 * **Patch**: Mudanças pequenas (exemplos: correções de bug, alterações de texto).
-* **Ano e mês**: Apenas uma referência da época em que a versão foi fechada. Utilizar dois dígitos para o ano seguido de dois dígitos para o mês.
+* **Ano e mês**: Apenas uma referência da época em que a versão foi fechada.
+Utilizar dois dígitos para o ano seguido de
+dois dígitos para o mês.
 
-Em casos de web service ou bibliotecas, um incremento do *major* significa que a nova versão quebra a compatibilidade com a versão anterior.
-**Ou seja: uma versão que incremente apenas um *minor* ou *patch* deve continuar compatível com as versões de mesmo *major***.
+Em casos de web service ou bibliotecas, um incremento do *major* significa que a nova versão quebra a compatibilidade
+com a versão anterior.
+
+**Importante: uma versão que incremente apenas um *minor* ou *patch* deve continuar compatível com as versões de mesmo
+*major***.
 
 ## Incrementando o número de versão
 
-* Para softwares maiores (sistemas que passam por etapa de teste e homologação antes de produção) a primeira versão é **v0.1.0**;
+* Para softwares maiores (sistemas que passam por etapa de teste e homologação antes de produção) a primeira versão é
+**v0.1.0**;
 * Para software menores (pequenas bibliotecas, web services simples) a primeira versão pode já ser **v1.0.0**;
 * Quando incrementado o dígito *minor* zera-se o dígito *patch*;
 * Quando incrementado o dígito *major* zera-se o dígito *minor*;
-* O último campo de data é apenas um referencial, ou seja, em nova versão não basta atualizar o campo data, o número *major*, *minor* ou *patch* há de ser incrementado.
+* O último campo de data é apenas um referencial, ou seja, em nova versão não basta atualizar o campo data, o número
+*major*, *minor* ou *patch* há de ser incrementado.
 
 ## Exemplo cronológico
 
@@ -50,18 +57,39 @@ A recomendação é fechar uma versão quando:
 A versão deve ser definida junto ao sistema de controle de versão em uso (git).
 Sendo mais específico: **é imprescindível que uma versão seja uma tag no git.**
 
-É também uma boa prática organizar outros artefatos do projeto por este número de versão (informação do assembly, backups, bug tracker, instaladores, etc).
+É também uma boa prática organizar outros artefatos do projeto por este número de versão (informação do assembly,
+backups, bug tracker, instaladores, etc).
+
+## Release candidate
+
+Alguns projetos publicam em ambiente de teste com grande frequência, às vezes diariamente.
+Nesses casos recomenda-se adicionar `-rc{número}` na tag.
+
+Exemplo:
+
+* `v1.0.0.1309`: Versão inicial;
+* `v1.0.1.1309-rc1`: Primeiro candidato a versão v1.0.1.1309;
+* `v1.0.1.1309-rc2`: Segundo candidato a versão v1.0.1.1309;
+* `v1.0.1.1309-rc3`: Terceiro candidato a versão v1.0.1.1309.
+
+Seguindo nosso exemplo, suponhamos que a equipe de testes deu OK para a versão `v1.0.1.1309-rc3`.
+Após essa verificação cria-se a tag `v1.0.1.1309` na mesma revisão da tag `v1.0.1.1309-rc3` e deletam-se todas as tags
+`-rc`, ficando assim:
+
+* `v1.0.0.1309`: Versão inicial;
+* `v1.0.1.1309`: Segunda versão.
+
+**Importante: nunca deve-se publicar uma versão *rc* em homologação ou produção.**
 
 ## Especificando a versão no código
 
 Configurar o número de versão no assembly (*AssemblyInfo*) antes de liberar a nova versão.
-
 Não precisa marcar a versão em todos assemblies da solução, apenas no projeto executável.
 
 Se o projeto for web, coloque também no footer do site.
 Para não fazer isso manualmente, você pode utilizar o seguinte snippet: 
 
-```csharp
+```cs
 HttpContext.Current.ApplicationInstance.GetType().BaseType.Assembly.GetName().Version
 ```
 
