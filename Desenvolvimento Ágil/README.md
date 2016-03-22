@@ -1,6 +1,6 @@
 # Desenvolvimento Ágil
 
-![](Imagens/Desenvolvimento Ágil.png)
+![](Imagens/agil.png)
 
 O objetivo deste documento é formalizar o processo ágil adotado por alguns projetos da AeC.
 Fica aberto para devidas alterações e adaptações, tanto no documento como na utilização em algum projeto específico.
@@ -25,7 +25,7 @@ Ele não substitui eventuais treinamentos ou a experiência adquirida conforme o
 
 ## Papéis
 
-![](Imagens/Papéis.png)
+![](Imagens/papeis.png)
 
 Os envolvidos no processo são: o *Cliente*, o *Analista* e o *Time*.
 
@@ -37,15 +37,15 @@ Mais sobre as atribuições do Analista e do Time é demonstrado nos demais iten
 
 ## A Sprint
 
-![](Imagens/A Sprint.png)
+![](Imagens/sprint.png)
 
 Passamos a medir nosso tempo de desenvolvimento do produto não mais em semanas ou meses, e sim em Sprints.
-A Sprint representa uma iteração do desenvolvimento do produto, e é durante ela que é desenvolvido o incremento (concluído, mas não necessariamente entregue).
+A Sprint representa uma iteração do desenvolvimento do produto, é durante ela que é desenvolvido o incremento (concluído, mas não necessariamente publicado).
 
 A duração da Sprint é determinada pelos envolvidos considerando fatores como tempo de risco para o negócio, experiência da equipe e porte do software.
 Recomenda-se utilizar Sprints de 1 a 4 semanas, sendo o mais comum Sprints de 2 semanas.
 
-Pode ser alterado o tempo de Sprint acordado com os envolvidos ao longo do projeto se visto que a escolha do tempo foi inadequada. 
+Se visto que a escolha do tempo foi inadequada pode-se alterar o tempo de Sprint, acordando com todos envolvidos, ao longo do projeto.
 Mas não se prolonga ou encurta uma Sprint em andamento de maneira alguma (independente de como ela está).
 
 A Sprint se inicia com as reuniões de Sprint Planning (parte 1 e parte 2).
@@ -57,23 +57,23 @@ Deve-se evitar ao máximo criar intervalo entre Sprints.
 
 ## Product Backlog
 
-![](Imagens/Product Backlog.png)
+![](Imagens/product-backlog.png)
 
 O Product Backlog é uma lista ordenada de tudo o que é necessário e desejável no produto. Seu conteúdo é dinâmico, ele deve mudar conforme o produto é desenvolvido e mais do negócio é conhecido.
 Funcionalidades incertas ou não essenciais devem também estar expressas no backlog: o Product Backlog representa a visão que se tem do produto.
 Ele muda independentemente do desenrolar das sprints.
 
 A lista é ordenada conforme a prioridade de cada item.
-Quanto mais acima na lista estiver um item, mais cedo ele será produzido. 
-Consequentemente os itens da parte de cima do backlog são bem conhecidos e descritos, enquanto os mais abaixo nem tanto.
+Quanto mais acima na lista estiver um item mais cedo ele será produzido.
+Os itens da parte de cima do backlog são bem conhecidos e descritos enquanto os mais abaixo nem tanto.
 
-Recomenda-se utilizar como itens dessa lista estórias de usuário. 
+Recomenda-se utilizar *estórias de usuário* como itens dessa lista.
 Estórias de usuário são pequenas frases que demonstram o que um usuário do produto faz ou necessita.
 Um formato muito comum é:
 
 > Como [papel do usuário] eu gostaria de [objetivo / necessidade].
 
-Pode se criar o template que for mais adequado ao projeto.
+Pode se criar o template com o que for mais adequado ao projeto.
 Normalmente pergunta-se: Quem, Quando, Onde, O quê e/ou Por que.
 
 Junto à estória de usuário deve existir uma especificação ou descrição.
@@ -84,7 +84,7 @@ Deve-se estimular o contato frequente com o Product Backlog, a fim de obter feed
 
 ## Sprint Backlog
 
-![](Imagens/Sprint Backlog.png)
+![](Imagens/sprint-backlog.png)
 
 O Sprint Backlog é uma lista ordenada de estórias selecionadas para a Sprint e suas respectivas atividades.
 Ele representa as atividades do Time na Sprint agrupadas por suas respectivas estórias.
@@ -94,7 +94,7 @@ O Sprint Backlog é alterado somente pelo time, mas é visível também para Ana
 
 ## Scrum Board
 
-![](Imagens/Scrum Board.png)
+![](Imagens/scrum-board.png)
 
 Uma das práticas que encorajamos é utilizar um quadro (chamado de *Scrum Board*) para organizar o trabalho da sprint.
 Ele basicamente representa o Sprint Backlog, suas atividades e estórias, com colunas representando o status da atividade (terminando em concluído).
@@ -104,7 +104,7 @@ Pode se utilizar o quadro também para colocar qualquer outra informação relev
 
 ## Sprint Planning
 
-![](Imagens/Sprint Planning.png)
+![](Imagens/sprint-planning.png)
 
 A Sprint Planning é a reunião que inaugura a Sprint.
 Ela é divida em duas partes: na primeira parte (*planning 1*) discute-se **o que** será feito na Sprint, na segunda parte (*planning 2*) **como** será feito.
@@ -115,14 +115,14 @@ Na primeira parte da reunião o Analista apresenta para o Time as estórias do P
 Quando o time percebe que a quantidade de estórias apresentadas é suficiente para preencher uma sprint segue-se para a segunda parte da reunião.
 
 Na segunda parte da reunião, não mais com o Analista presente, o Time divide as estórias selecionadas para Sprint em atividades menores.
-É nessa reunião que dúvidas de maior cunho técnico são discutidas e que o software é arquitetado.
+É nessa reunião que dúvidas de cunho técnico são discutidas e o software é arquitetado.
 Após a reunião o Sprint Backlog deve estar completo.
 
 Terminada a Sprint Planning o Time atualiza o Scrum Board com o Sprint Backlog da Sprint atual e inicia-se o desenvolvimento.
 
 ## Daily Meeting
 
-![](Imagens/Daily Meeting.png)
+![](Imagens/daily-meeting.png)
 
 Durante os dias de trabalho da Sprint o Time se reúne rapidamente em uma reunião diária para sincronizar o trabalho.
 Ela deve ser curta (15 minutos), e, para assegurar que ela seja sucinta, todos ficam de pé e a reunião acontece sempre no mesmo local no mesmo horário.
@@ -139,7 +139,7 @@ O Analista pode estar presente, mas deve se resumir a mero espectador.
 
 ## Sprint Review
 
-![](Imagens/Sprint Review.png)
+![](Imagens/sprint-review.png)
 
 Essa reunião acontece ao final da Sprint.
 É o momento de Analista, Time e Cliente inspecionarem o que foi feito na Sprint.
@@ -154,7 +154,7 @@ Apesar de muitas vezes não ser possível, é extremamente importante a presenç
 
 ## Sprint Retrospective
 
-![](Imagens/Sprint Retrospective.png)
+![](Imagens/sprint-retrospective.png)
 
 Logo após a reunião de Sprint Review, encerrando finalmente a Sprint, acontece a reunião de Sprint Retrospective.
 Nessa reunião Analista e Time inspecionam e discutem as pessoas, as relações, o processo e as ferramentas.
@@ -171,6 +171,8 @@ A partir deles podemos notar se esses impedimentos são recorrentes ou eventuais
 
 ## Outros Conceitos
 
+![](Imagens/outros-conceitos.png)
+
 Abaixo vão alguns tópicos que podem futuramente ser incorporados ou citados em nosso processo:
 
 * Definição de Pronto (*Definition of Done*)
@@ -186,7 +188,7 @@ Abaixo vão alguns tópicos que podem futuramente ser incorporados ou citados em
 * Refinamento de Backlog
 * *Release Planning*
 * *Burndown Chart*
-* Ferramenta utilizada para gerir o *Product Backlog*
+* Ferramenta utilizada para gerir o Product Backlog
 * Número/nome da Sprint
 
 
@@ -194,13 +196,13 @@ Abaixo vão alguns tópicos que podem futuramente ser incorporados ou citados em
 
 Crédito das imagens:
 
-* [*Desenvolvimento Ágil*](http://curia.europa.eu/juris/document/document.jsf?docid=73361)
-* [*A Sprint*](http://commons.wikimedia.org/wiki/File:Scrum_process.svg)
-* [*Product Backlog*](http://languageboat.com/2014/07/21/wish-list-languages-i-would-like-to-learn)
-* [*Sprint Backlog*](http://promoline.com.br/blog/index.php/post-it-personalizado)
-* [*Scrum Board*](https://cigaminfra.wordpress.com/2009/11/23/sprint-04-segunda-feira)
-* [*Sprint Planning*](https://hakanforss.wordpress.com/2012/04/25/agile-lego-toyota-kata-an-alternative-to-retrospectives)
-* [*Daily Meeting*](http://razortheory.com/scrum)
-* [*Sprint Review*](http://commons.wikimedia.org/wiki/File:Revision_3%27s_Friday_afternoon_staff_meeting.jpg)
-* [*Sprint Retrospective*](https://redperil.wordpress.com/2011/01/02/new-year-resolutions)
-* [*Outros Conceitos*](http://icongal.com/gallery/icon/24757/128/plus_sketchy_add)
+* [Desenvolvimento Ágil](http://curia.europa.eu/juris/document/document.jsf?docid=73361)
+* [A Sprint](http://commons.wikimedia.org/wiki/File:Scrum_process.svg)
+* [Product Backlog](http://languageboat.com/2014/07/21/wish-list-languages-i-would-like-to-learn)
+* [Sprint Backlog](http://promoline.com.br/blog/index.php/post-it-personalizado)
+* [Scrum Board](https://cigaminfra.wordpress.com/2009/11/23/sprint-04-segunda-feira)
+* [Sprint Planning](https://hakanforss.wordpress.com/2012/04/25/agile-lego-toyota-kata-an-alternative-to-retrospectives)
+* [Daily Meeting](http://razortheory.com/scrum)
+* [Sprint Review](http://commons.wikimedia.org/wiki/File:Revision_3%27s_Friday_afternoon_staff_meeting.jpg)
+* [Sprint Retrospective](https://redperil.wordpress.com/2011/01/02/new-year-resolutions)
+* [Outros Conceitos](http://icongal.com/gallery/icon/24757/128/plus_sketchy_add)
