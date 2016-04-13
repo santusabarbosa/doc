@@ -24,6 +24,18 @@ Esse script é utilizado ao criar um novo ambiente (limpo).
 Para atualizações são mantidos os scripts dentro de uma pasta com o exato número da versão.
 Dentro dessa pasta se encontram ordenados os scripts necessários para atualizar o banco para esta versão (o nome do script inicia com um número indicando sua ordem).
 
+## O que vai nos scripts?
+
+Toda alteração de banco necessária para atualizar uma versão/gerar uma nova base, ou seja, alterações em:
+
+* Tabelas
+* Carga inicial nas tabelas necessárias
+* Constraints (PK, FK, index, unique, ...)
+* Views
+* Triggers
+* Stored procedures
+* Functions
+
 ## Estrutura de pastas
 
 Crie uma pasta `SQL` na raiz do projeto, nela:
