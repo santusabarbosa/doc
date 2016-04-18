@@ -75,9 +75,9 @@ Descrição do que o web service faz.
 
 Como requisitar o web service.
 
-## Erros
+## Status de retorno
 
-Os possíveis erros retornados pelo web service.
+Os possíveis status de retorno do web service.
 
 ## Exemplo
 
