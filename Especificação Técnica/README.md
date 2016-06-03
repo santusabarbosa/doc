@@ -72,4 +72,4 @@ Pequeno passo a passo de como deve ser feita a publicação do sistema.
 
 Se houver necessidade, pode-se separar uma seção da documentação em mais de uma.
 Ao invés de apenas "Arquitetura" pode-se separ em subseções como "Arquitetura - classes do domínio" e "Arquitetura -
-camadas do projeto" por exemplo (utiliznado a seção original do template acima seguido por hífen e nome da subseção).
+camadas do projeto" por exemplo (utilizando a seção original do template acima seguido por hífen e nome da subseção).
