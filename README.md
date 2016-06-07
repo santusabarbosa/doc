@@ -3,6 +3,7 @@
 Aqui residem as documentações do time de desenvolvimento da [AeC](http://aec.com.br).
 
 * [Changelog](Changelog)
+* [DDD](DDD)
 * [Desenvolvimento Ágil](Desenvolvimento Ágil)
 * [Escrevendo um Web Service](Escrevendo um Web Service)
 * [Especificação Técnica](Especificação Técnica)
