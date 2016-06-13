@@ -16,7 +16,7 @@ Ao utilizar alguma ferramenta que gere scripts, lembre-se de "limpar" instruçõ
 
 Troque:
 
-```
+```sql
 CREATE TABLE [dbo].[tb_USUARIO](
 	[ID_Usuario] [int] IDENTITY(1,1) NOT NULL,
 	[Nome] [nvarchar](200) NOT NULL,
@@ -40,7 +40,7 @@ GO
 
 Por:
 
-```
+```sql
 CREATE TABLE tb_USUARIO (
 	ID_Usuario INT NOT NULL CONSTRAINT PK_USUARIO PRIMARY KEY IDENTITY,
 	Nome NVARCHAR(200) NOT NULL,
@@ -95,7 +95,7 @@ Prefira `DATETIME2` ao invés de `DATETIME`.
 Se fizer sentido salvar apenas a hora utilize o tipo `TIME`, e no caso de somente data utilize o tipo `DATE` (não
 utilize `DATETIME2` sem necessidade).
 
-## Viva o Unicode
+## Unicode
 
 Utilizar Unicode evita uma série de problemas de encoding, use `NVARCHAR` ao invés de `VARCHAR`.
 
@@ -104,7 +104,7 @@ Utilizar Unicode evita uma série de problemas de encoding, use `NVARCHAR` ao in
 Utilize `IDENTITY` (auto-incremento) somente se necessário.
 Tabelas `tbt_` não devem possuí-lo.
 
-## Nunca salve senhas limpas
+## Senhas
 
 Salvar senhas de usuários no banco não só é uma falha de segurança como também um desrespeito com o usuário, nunca
 salve-as como texto limpo.
@@ -113,17 +113,17 @@ O ideal é que seja gerado um sal para cada usuário e que a senha seja um hash 
 criptografia.
 O hash é gerado com a senha informada pelo usuário concatenada ao sal gerado.
 
-## Não salve com máscara
+## Máscaras
 
 Salve registros como CPF ou RG como string e sem máscara (`'48519496938'` ao invés de `'485.194.969-38'` ou
 `48519496938` por exemplo).
 
-## Evite chaves naturais e UUID como chave
+## Chaves naturais e UUID como chave
 
 Alinhe com a equipe de banco de dados antes de utilizar chaves naturais (chaves compostas) e `UNIQUEIDENTIFIER`
 ([UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)) como chave.
 
-## Não coloque lógica no banco de dados
+## Lógica no banco de dados
 
 Crie triggers, views e stored procedures somente em último caso, o ideal é que toda a regra de negócio esteja no código
 da aplicação.
