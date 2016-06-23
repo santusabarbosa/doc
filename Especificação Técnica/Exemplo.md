@@ -34,7 +34,7 @@ A única "sofisticação" provida pelo web service é a resolução de nomes do 
 cadastrado na rede ao invés do endereço de email).
 O envio em si é bem simples, não existe fila ou algo do tipo (hoje o envio é síncrono e não há persistência).
 
-Ao executa o web service localmente utilizar o [Papercut] como servidor SMTP local.
+Ao executar o web service localmente utilize o [Papercut] como servidor SMTP local.
 
 [Papercut]: https://papercut.codeplex.com
 
