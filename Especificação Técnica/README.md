@@ -44,7 +44,7 @@ Documentação da arquitetura do projeto (diagramas de classes, separação e re
 
 Quais são as configurações necessárias para executar o projeto.
 
-## Dívida técnica
+## Dívidas técnica
 
 Backlog de itens técnicos a serem melhorados no projeto.
 
