@@ -60,27 +60,6 @@ Sendo mais específico: **é imprescindível que uma versão seja uma tag no git
 É também uma boa prática organizar outros artefatos do projeto por este número de versão (informação do assembly,
 backups, bug tracker, instaladores, etc).
 
-## Release candidate
-
-Alguns projetos publicam em ambiente de teste com grande frequência, às vezes diariamente.
-Nesses casos recomenda-se adicionar `-rc{número}` na tag.
-
-Exemplo:
-
-* `v1.0.0.1309`: Versão inicial;
-* `v1.0.1.1309-rc1`: Primeiro candidato a versão v1.0.1.1309;
-* `v1.0.1.1309-rc2`: Segundo candidato a versão v1.0.1.1309;
-* `v1.0.1.1309-rc3`: Terceiro candidato a versão v1.0.1.1309.
-
-Seguindo nosso exemplo, suponhamos que a equipe de testes deu OK para a versão `v1.0.1.1309-rc3`.
-Após essa verificação cria-se a tag `v1.0.1.1309` na mesma revisão da tag `v1.0.1.1309-rc3` e deletam-se todas as tags
-`-rc`, ficando assim:
-
-* `v1.0.0.1309`: Versão inicial;
-* `v1.0.1.1309`: Segunda versão.
-
-**Importante: nunca deve-se publicar uma versão *rc* em homologação ou produção.**
-
 ## Especificando a versão no código
 
 Configurar o número de versão no assembly (*AssemblyInfo*) antes de liberar a nova versão.
